@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+ body{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+ }
+
+ .flex-container{
+     display: flex;
+     background-color: blue;
+     flex-direction: row;
+flex-wrap: wrap;
+line-height: 70px;
+flex-flow: row wrap;
+text-align: center;
+ justify-content: left;
+align-items: center;
+align-content: left;
+height: 200px;
+
+
+
+ }
+
+
+
+ .flex-container > div{
+     background-color: white;
+     font-family: sans-serif;
+padding: 10px;
+
+margin: 10px; 
+/* margin is used to give objects spaces arond a container */
+
+
+
+ /* column column-reverse row-reverse; */
+    }
+
+
+
+
+

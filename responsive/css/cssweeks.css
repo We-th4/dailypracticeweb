@@ -1,0 +1,55 @@
+@import url(/responsive/css/codewarlocknav.css);
+@import url(/responsive/css/index.css);
+@import url(/responsive/css/codewarlockgrid.css);
+@import url(/responsive/css/codes.css);
+
+main .detailscontainer{
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin: 0 auto;
+    position: relative;
+    right: 100px;
+    margin-bottom: -900px;
+}
+
+main .detailscontainer p{
+    color: green;
+    /* width: 50%; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:5px;
+    background-color: #d4d4baa1;
+    width: 92%;
+    text-align: center;
+    height: 215px;
+}
+
+main .detailscontainer p:hover{
+    background-color: #d4d4ba;
+}
+
+main .detailscontainer details{
+    display: flex;
+    position: relative;
+    /* background-color: red; */
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+iframe{
+    border: none;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+}

@@ -1,0 +1,213 @@
+@import url(/responsive/css/codewarlocknav.css);
+@import url(/responsive/css/index.css);
+@import url(/responsive/css/codewarlockgrid.css);
+body{
+    background-color: rgb(8, 1, 1);
+}
+
+section .display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* right: 100px; */
+    position: relative;
+    top: 150px;
+}
+
+section .display>img{
+    height: 500px;
+    /* filter: blur(5px); */
+}
+
+section .displaycourses{
+    color: rgb(99, 214, 214);
+    display: flex;
+    position: relative;
+    font-size: 60px;
+    flex-direction: column;
+}
+
+section .displaycourses>div:nth-child(2){
+    color: red;
+    font-size: 100px;
+}
+
+section .displaycourses>div:nth-child(1)::before{
+    content: '';
+    background-color:rgb(99, 214, 214);
+    height: 2px;
+    width: 100px;
+    transition: 10s;
+    position: absolute;
+
+}
+
+/* *{
+    transition: 5s;
+} */
+
+section .displaycourses>div:nth-child(1)::after{
+    content: '';
+    background-color:rgb(99, 214, 214);
+    height: 10px;
+    width: 100px;
+    transition: 10s;
+    left: 50px;
+    position: absolute;
+
+}
+
+section .displaycourses>div:nth-child(2)::before{
+    content: '';
+    background-color: red;
+    height: 8px;
+    width: 500px;
+    left: 80px;
+    top: 200px;
+    z-index: 1;
+    opacity: 0.4;
+    position: absolute;
+}
+
+section .displaycourses>div:nth-child(2)::after{
+    content: '';
+    background-color: red;
+    height: 8px;
+    width: 10px;
+    left: 80px;
+    top: 200px;
+    z-index: 1;
+    /* border-radius: 100%; */
+    opacity: 0.4;
+    position: absolute;
+    animation: after 10s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes after {
+    from{
+        width: 10px;
+    }
+
+    to{
+             width: 500px;
+             opacity: 1;
+             transition: 10s;
+             background-color: red;
+    }
+}
+
+main .courseroles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    top:100px;
+    gap: 70px;
+    margin-bottom: -500px;
+    
+}
+
+main .courseroles>div{}
+
+main .courseroles>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 3, 3);
+    height: 220px;
+    margin-right: 50px;
+    width: 320px ;
+    box-sizing: content-box;
+    color: rgb(233, 225, 225);
+    gap: 30px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    /* margin: 0 auto; */
+    box-shadow: 0px 5px 0px red;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+main .courseroles>div:hover{
+    transform: none;
+}
+
+
+hr{
+    width: 90vw;
+    height: 2px;
+    background: linear-gradient(45deg, cyan, red, cyan);
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    top:500px;
+    margin: 0 auto;
+    left: 50px;
+    right: 50px;
+}
+
+section .displaycourses i{ 
+    font-size: 100px;
+    color: #fff;
+}
+
+main .courseroles div >p{
+    font-size: 30px;
+    width: 30px;
+    position: relative;
+    top: -50px;
+    left: -20px;
+}
+
+main .courseroles div >p::before{
+    content: '';
+    background-color: rgb(228, 218, 218);
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    transform: rotate(20deg);
+    top: 50px;
+    left: 25px;
+    box-shadow: 0px 0px 10px red;
+}
+
+main .courseroles div >p::after{
+    content: '';
+    background-color: rgb(228, 218, 218);
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 50px;
+    left: 10px;
+    box-shadow: 0px 0px 10px red;;
+}
+
+main .courseroles div >a{
+    animation: after1 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes after1 {
+    from{
+        color: red;
+    }
+
+    to{
+             color: aqua;
+             transition: 10s;
+    }
+}
+
+main .courseroles hr{
+    width: 50%;
+    background-color: cyan;
+}

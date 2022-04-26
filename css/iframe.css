@@ -1,0 +1,91 @@
+*{
+    /* color: deepskyblue; */
+}
+
+body,html{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+div.navbar{
+background-color: cyan;
+/* margin-left: 10px; */
+color: black;
+height: auto;
+width: 100%;
+/* display: inline-block; */
+text-align: center;
+
+}
+.navbar label{
+
+    
+    font-size: 150px;    
+    /* display: inline-block; */
+/* margin-top: 10; */
+padding: 10px;
+text-align: center;
+margin-bottom: 10px;
+color: aliceblue;
+text-shadow: 0px  10px 10px chocolate;
+/* word-wrap: normal; */
+
+}
+
+.navbar ul{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    /* display: inline-block; */
+    float: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+    /* float: left; */
+    margin-top:50px;
+    margin-left:10px ;
+    text-shadow: 10px  5px 10px chocolate;
+   
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+
+}
+
+.link, .navbar ul li:hover{
+    background-color: chocolate;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#list{
+    display: none;
+}
+
+
+.navbar ul li:hover #list{
+    background-color: cyan;
+color: white;
+display: inline-block;
+position: absolute;
+margin-top: 15px;
+margin-right: -15px;
+border-radius: 5px;
+
+
+}
+
+.navbar ul li a:hover #list li{
+display: block;
+background-color: none;
+
+}
+
+

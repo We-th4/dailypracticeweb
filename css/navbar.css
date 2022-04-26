@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+   color: blue;
+   background: red;
+   padding: 0 5px ;
+}
+
+nav label{
+    color: white;
+    line-height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    line-height: 70px;
+
+}
+
+ul li{
+    display: inline-block;
+   margin: 10px;
+   list-style: none;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+ul li a:hover{
+    background-color: blue;
+    /* margin: 20px; */
+    padding: 5px 7px 3px;
+    border-radius: 3px ;
+       
+
+}
+
+span{
+    background: black;
+    width: 30px;
+   height: 5px;
+    display: block;
+    margin: 5px 0;
+}
+
+
+#dropdown{
+background-color: red;
+color: white;
+text-align: center;
+padding: 10px;
+display: none;
+
+}
+
+#abtdrop:hover{
+    background-color: red;
+display: inline-block;
+color: white;
+
+}
+
+#abtdrop#dropdown:hover{
+    display: block;
+} 

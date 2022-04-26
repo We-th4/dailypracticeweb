@@ -1,0 +1,201 @@
+:root{
+        --bgcolor: #0c0101;
+        --ftsize: 30px;
+        --ftsizehome: 13px;
+}
+
+/* ============================ root values================================ */
+*{
+    transition: all .5s;
+}
+
+
+body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        background-color: var(--bgcolor);
+        color: red;
+}
+
+header .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 20px;
+        align-items: center;
+        background-color: var(--bgcolor);
+        /* z-index: 1; */
+        position: static;
+        /* background-attachment: fixed; */
+        transition: all .5s;
+        
+}
+/* ============================ NAV Bar container================================ */
+a{
+        text-decoration: none;
+        color: rgb(230, 51, 20);
+        text-transform: capitalize;
+}
+/* ============================ anchor link a ================================ */
+
+header > .nav-bar .nav-bar-list{
+        font-size: var(--ftsizehome);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+header > .nav-bar .nav-bar-list a{
+        display: flex;
+        color: antiquewhite;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+        /* position: relative; */
+        top: 20px;
+        font-size: 15px;
+        position: sticky;
+        top: 1;
+}
+
+.menubaritem{
+        display: none;
+}
+
+.courses{
+        /* display: none; */
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* background-color: #ff0000; */
+        position: relative;
+        top: -20px;
+        left: -50px;
+        padding: 10px;
+        transition: all .5s ease;
+        border-radius: 60%;
+}
+.courses::before{
+        content: " ";
+        background-color: red;
+        height: 2px;
+        border-radius: 50%;
+        width: 30px;
+        position: absolute;
+        top: 5px;
+}
+
+.courses::after{
+        content: '';
+        background-color: red;
+        height: 2px;
+        border-radius: 50%;
+        width: 30px;
+        position: absolute;
+        top: 30px;
+        
+        left: 0px;
+}
+
+/* ============================ Displaying values on home hover ================================ */
+
+
+header > .nav-bar .nav-bar-list a:nth-child(even){
+        color: cyan;
+}
+
+/* ===============home hover displays------------------------------------------------------ */
+header > .nav-bar .nav-bar-list a:nth-child(1){
+        display: flex;
+        flex-direction: column;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(1):hover .courses{
+        display: inline-block;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(2){
+        display: flex;
+        flex-direction: column;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(2):hover .courses{
+        display: inline-block;
+        color: #fff;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(3){
+        display: flex;
+        flex-direction: column;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(3):hover .courses{
+        display: inline-block;
+        color: #fff;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(4){
+        display: flex;
+        flex-direction: column;
+}
+
+header > .nav-bar .nav-bar-list a:nth-child(4):hover .courses{
+        display: inline-block;
+        color: #fff;
+}
+
+
+@media screen and (max-width: 375px){
+        body{
+                background: linear-gradient(hsl(236, 21%, 26%), hsl(234, 17%, 12%));
+        }
+
+        header > .nav-bar .nav-bar-list{
+                display: block;
+                font-size: var(--ftsizehome);
+                /* display: flex;
+                flex-direction: row; */
+                align-items: center;
+                /* width: 100px; */
+                margin-bottom: 20px;
+}
+
+        header > .nav-bar .nav-bar-list a{
+        display: inline-block;
+        color: #fff;
+        /* justify-content: space-around;
+        align-items: center; */
+        /* margin-left: 100px; */
+        /* position: relative; */
+        top: -130px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        /* position: sticky; */
+        /* top: 1; */
+}
+
+.warlockcode1 a{
+        display: flex;
+        position: relative;
+        color: #fff;
+        top: -130px;
+        flex-direction: column;
+}
+
+.menubaritem{
+        display: inline-block;
+        margin-top: -190px;
+        width: 50px;
+        font-size: 30px;
+}
+
+.menubaritem:hover .nav-bar-list a {
+        opacity: 1;
+        color: #fff;
+}
+        
+}
+        
+}

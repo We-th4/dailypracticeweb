@@ -1,0 +1,137 @@
+body,html{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    background-image: url('../graphics/-R@y\ Collections_\ GIFs\ ;\ Beach\ _\ Praia\ beach\ _\ luxury\ _\ rich.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a:link{
+    color: #fff;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: purple
+}
+
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 10px;
+    margin: 10px;
+    padding: 10PX;
+    background-color:  rgb(20, 95, 95);;
+    color: white;
+    box-shadow: 0px 0px 20px cyan;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: sticky;
+    width: auto;
+
+}
+
+.flex-container:hover{
+ background-color:grey;
+}
+
+
+.flex-container > div{
+    margin: 20px;
+    padding: 10px;   
+    }
+
+.flex-container > div>a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+    
+
+.flex-container > div:nth-child(5){
+border-radius: 20px;
+padding: 10px;
+border-right: 4px double red;
+border-bottom-right-radius: 15px;
+box-shadow: 0px 2px 30px cyan;
+margin-left: auto;
+text-align: center;
+background-color: red;
+color: white;
+}
+
+.flex-container > div:nth-child(1){
+
+    border-left: 4px double cyan;
+    border-bottom-left-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+box-shadow: 0px 2px 30px cyan;
+}
+
+.flex-container > div:nth-child(4){
+
+    border-right: 4px double cyan;
+    border-bottom-right-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+box-shadow: 0px 2px 30px cyan;
+}
+.flex-container > div:nth-child(4):hover , .flex-container > div:nth-child(1):hover{
+    background-color: #f00;
+}
+
+.flex-body{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.flex-body > img:nth-child(1){
+    margin-bottom: 10px;
+    
+    margin-left: 10px;
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+
+}
+.flex-body > img:nth-child(2){
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+}
+
+.flex-body > img:nth-child(3){
+    
+    margin-left: 10px;
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+}
+
+.flao{
+    display: inline-flex;
+    
+    float: right;
+    margin-right: 100px;
+/* opacity: 0.30; */
+/* box-shadow: 2px 0px 20px cyan; */
+}
+
+.flao >h1{
+    font-size: 200px;
+    color: red;
+    float: right;
+}

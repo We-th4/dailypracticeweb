@@ -1,0 +1,320 @@
+@import url(/responsive/css/index.css);
+@import url(/responsive/css/perspective.css);
+@import url(/responsive/css/codewarlocknav.css);
+
+*{scroll-behavior: smooth;}
+
+
+section{
+        width: 100%;
+}
+
+section .grid-container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px;
+        padding: 10px 10px;
+        gap: 20px;
+        /* width: 50vw; */
+        position: relative;
+        top: 150px;
+        left: 350px;
+        right: 350px;
+        transition: 4s;
+    
+}
+
+section >.grid-container .grid-area{
+        background-color: rgb(22, 1, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        /* font-size: 30px; */
+        transition: all 5s;
+        box-shadow: 0px 0px 10px rgb(31, 1, 1);
+
+}
+
+
+
+
+.grid-area:nth-child(1){
+        grid-column: 1/5;
+        grid-row: 2/4;
+        font-size: 70px;
+        font-weight: 700;
+        font-stretch: extra-expanded;   
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+section >.grid-container .grid-area:nth-child(2){
+        background-color: cyan;
+        color: aliceblue;
+}
+
+
+section >.grid-container .grid-area:nth-child(4){
+        background-color: rgb(70, 9, 1);
+        color: aliceblue;
+}
+
+section >.grid-container .grid-area:nth-child(6){
+        grid-column: 5/6;
+        grid-row: 1/6;  
+        background-color: aqua; 
+        transform: rotateX(20deg);      
+        animation: grid2 5s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 1; 
+        transition: all .3s ease;
+}
+
+section >.grid-container .grid-area:nth-child(7){
+        grid-column: 0/1;
+        grid-row: 1/6;  
+        background-color: rgb(153, 8, 8);
+        animation: grid1 5s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 1; 
+        transition: all .3s ease;
+    }
+
+
+    /* webit========================== animate============= */
+@-webkit-keyframes grid1 {
+    from{
+        background-color: rgb(153, 8, 8);
+    }
+
+    to{
+             background-color: cyan;
+    }
+}
+
+@-webkit-keyframes grid2 {
+        from{
+                background-color: cyan;;
+}
+
+to{
+                background-color: rgb(153, 8, 8);
+    }
+}
+
+
+/* --------------------------------------------------- */
+
+aside{
+            /* float: right; */
+            /* height: 100px; */
+            /* position: absolute; */
+            display: flex;
+            color: red;
+            flex-direction: column;
+            position: relative;
+            top:200px;
+            /* max-width: auto; */
+            flex-direction: column;
+            /* max-height: auto; */
+            padding: 20px;
+            /* margin-right: 20px; */
+            /* background-color: rgba(15, 13, 13, 0.842); */
+    }
+
+aside .aside-container img{
+        width: 200px;
+        height: 200px;
+        filter: sepia();
+        transition: 10s;
+    }
+
+ aside .aside-container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 200px;
+        margin: 0 auto;
+        gap: 50px;
+        margin-bottom: 10px;
+        /* box-shadow: 0px 0px 20px inset; */
+    }
+
+
+
+    main{
+        position: relative;
+        top: 300px;
+        min-width: 100%;
+        text-align: justify;
+        left: 20px;
+        transition: all .5s ease;
+        left: 100px;
+        right: 100px;
+        box-sizing: border-box;
+        transition: 9s;
+    }
+
+    main .main-section{
+        font-size: 20px;
+        color: #fff;
+        transition: all .5s ease;
+        width: 80vw;
+    }
+
+    main .about-warlock{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            transition: all .5s ease;
+            margin-bottom: 50px;
+            color: #fff;
+            font-size: 20px;
+            transition: 8s ease;
+            position: relative;
+            /* width: 80%; */
+    }
+
+      .about-warlock::before{
+              content: '';
+              background-color: cyan;
+              height: 3px;
+              width: 250px;
+              position: absolute;
+              text-align: center;
+              top: 30px;
+
+      }
+
+      .about-warlock::after{
+                content: '';
+                background-color: cyan;
+                height: 10px;
+                width: 50px;
+                position: absolute;
+                border-radius: 100%;
+                top: 30px;
+                right: 600px;
+                transition: all .3s ease;
+                animation: after 5s ease-out;
+                animation-iteration-count: infinite;
+        }
+
+
+            /* webit========================== animate============= */
+@-webkit-keyframes after {
+    from{
+        right: 600px;
+    }
+
+    to{
+             right:500px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+        section{
+        width: 100%;
+}
+
+section .grid-container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px;
+        padding: 20px 20px;
+        gap: 20px;
+        /* width: 50vw; */
+        position: relative;
+        top: 100px;
+        left: 100px;
+        right: 100;
+        transition: 4s;
+    
+}
+
+section >.grid-container .grid-area{
+        /* background-color: rgb(22, 1, 1); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        /* font-size: 30px; */
+        transition: all 5s;
+        /* box-shadow: 0px 0px 10px rgb(31, 1, 1); */
+
+}
+
+.grid-area:nth-child(1){
+        grid-column: 1/5;
+        grid-row: 2/4;
+        font-size: 50px;
+        font-weight: 700;
+        font-stretch: extra-expanded;   
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section >.grid-container .grid-area:nth-child(6){
+        grid-column: 2/1;
+        grid-row: 1/2;  
+        background-color: aqua; 
+        transform: rotateX(20deg);      
+        animation: grid2 5s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 1; 
+        box-shadow: none;
+        margin-left: -200px;
+        transition: all .3s ease;
+}
+
+section >.grid-container .grid-area:nth-child(7){
+        grid-column: 1/1;
+        grid-row: 1/1;  
+        background-color: rgb(153, 8, 8);
+        animation: grid1 5s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 1; 
+        transition: all .3s ease;
+        margin-left: -100px;
+    }
+
+main{
+        left: 20px;
+    }
+.about-warlock::before{
+              content: '';
+              background-color: cyan;
+              height: 3px;
+              width: 150px;
+              position: absolute;
+              text-align: center;
+              top: 30px;
+
+      }
+
+aside .aside-container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        margin: 0 auto;
+        gap: 50px;
+        margin-bottom: 50px;
+        /* box-shadow: 0px 0px 20px inset; */
+    }
+
+.aside{
+        margin-bottom: 50px;
+}
+
+aside .aside-container img{
+        width: 270px;
+        height: 210px;
+        filter: sepia();
+        transition: 10s;
+        text-align: center;
+    }
+
+}
+
+.toggle-bar: :checked ~ 

@@ -1,0 +1,221 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Text);
+
+
+body{
+    background-image: url(/responsive/media/JPEG-PNG/bg-stars.svg);
+} 
+
+*{
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* .container>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    color: #fff;
+} */
+
+.flexbox{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+}
+
+.flexbox >div{
+    background: linear-gradient(hsl(236, 21%, 26%), hsl(234, 17%, 12%));
+    height: auto;
+    width: auto;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    color: #db2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px rgb(243, 127, 127);
+    margin-bottom: 20px;
+    transition: 10s;
+}
+
+.flexbox >div::before{
+    content: '';
+    background-color: black;
+    height:10%;
+    border-radius: 100%;
+    width: 7%;
+    opacity: 0.3;
+    top: 38px;
+    left: -2px;
+    position: absolute;
+}
+
+.flexbox >div::after{
+    content: '';
+    background-color: black;
+    height: 10%;
+    border-radius: 100%;
+    width: 7%;
+    opacity: 0.3;
+    top: 38px;
+    right: -1px;
+    position: absolute;
+}
+
+span::before{
+    content: '';
+    opacity: 0.6;
+    background-color: rgba(151, 184, 221, 0.308);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* .flexbox2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    gap: 90px;
+    font-size: 12px;
+    color: rgb(168, 179, 189);
+
+} */
+
+
+section .coded-services{
+    color: white;
+    position: relative;
+    top:630px;
+    text-align: center;
+}
+
+section>.flexcsshtml{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    top:650px;
+}
+
+section>.flexcsshtml table{
+    position: absolute;
+    top: 100px;
+}
+
+
+footer{
+        display: flex;
+        background-image: url(/responsive/media/JPEG-PNG/pattern-hills.svg);
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        top: 1200px;
+        gap: 20px;
+        color: azure;
+        text-align: center;
+}
+
+footer img{
+    margin-left: 100px;
+    
+}
+
+footer>div:nth-child(4){
+    color: red;
+    float: left;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 375px){
+
+.flexbox >div{
+    background: linear-gradient(hsl(236, 21%, 26%), hsl(234, 17%, 12%));
+    height: auto;
+    width: auto;
+    padding: 10px;
+    position: relative;
+    top: -50px;
+    color: rgb(236, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px rgb(243, 127, 127);
+    /* margin-bottom: 20px; */
+    margin-left: 20px;
+    transition: 10s;
+}
+
+.flexbox{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    position: absolute;
+    top: 350px;
+}
+
+section .coded-services{
+    color: white;
+    position: relative;
+    top: 1900px;
+    text-align: center;
+}
+
+section>.flexcsshtml table{
+    position: absolute;
+    top: 1400px;
+}
+
+footer{
+        
+        top: 2500px;
+        background-position: center;   
+        clear: left; 
+}
+
+footer>div:nth-child(4){
+    position: absolute;
+    top: 150px;
+    color: #fff;
+}
+footer img{
+    margin-left: 0px;
+}
+
+}

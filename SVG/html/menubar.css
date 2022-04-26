@@ -1,0 +1,61 @@
+:root{
+    --coll:linear-gradient(45deg, rgb(33, 133, 133), cyan);
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+
+nav{
+    display: none;
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    
+}
+
+#onclick:checked ~ nav{
+    display: block;
+}
+
+
+#onclick{
+    display: none;
+}
+
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    margin-left: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+nav ul li::before{
+    background-color: red;
+    position: absolute;
+    content: '';
+    top: 0;    
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+}
+
+.container{
+    background-image: url(../graphics/FallonApe.png);
+    height: 100vw;
+    background: var(--coll);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: grid;
+    place-items: center;
+}
